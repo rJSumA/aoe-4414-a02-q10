@@ -24,7 +24,7 @@ import math # math module
 import sys # argv
 
 # "constants"
-R_E_KM = 6378.137
+R_E_KM = 6378.1363
 E_E = 0.081819221456
 
 # helper functions
@@ -66,6 +66,7 @@ r_y_km = (C_E+hae_km)*math.cos(lat_rad)*math.sin(lon_rad)
 r_z_km = (S_E+hae_km)*math.sin(lat_rad)
 r_km = math.sqrt(r_x_km**2 + r_y_km**2 + r_z_km**2)
 
-print(str(r_x_km))
-print(str(r_y_km))
-print(str(r_z_km))
+print(r_x_km)
+print(r_y_km)
+print(r_z_km)
+
